@@ -10,20 +10,23 @@ class Template
             <html lang="en">
             <head>
                     <meta charset="utf-8">
-                    <title>Reveal Bootstrap Template</title>
+                    <title>InfogrArt</title>
                     <meta content="width=device-width, initial-scale=1.0" name="viewport">
                     <meta content="" name="keywords">
                     <meta content="" name="description">
+                    <link href="<?php echo URL?>/Public/css/style.css" rel="stylesheet">
+                    <link href="<?php echo URL?>/Public/style.css" rel="stylesheet">
                     <link href="<?php echo URL?>/Public/img/favicon.png" rel="icon">
                     <link href="<?php echo URL?>/Public/img/apple-touch-icon.png" rel="apple-touch-icon">
                     <link href="<?php echo URL?>/Public/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
                     <link href="<?php echo URL?>/Public/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
                     <link href="<?php echo URL?>/Public/lib/animate/animate.min.css" rel="stylesheet">
+                    <link href="<?php echo URL?>/Public/lib/animate/animate.css" rel="stylesheet">
                     <link href="<?php echo URL?>/Public/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
                     <link href="<?php echo URL?>/Public/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
                     <link href="<?php echo URL?>/Public/lib/magnific-popup/magnific-popup.css" rel="stylesheet">
                     <link href="<?php echo URL?>/Public/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-                    <link href="<?php echo URL?>/Public/css/style.css" rel="stylesheet">
+
 
                     <script src="<?php echo URL?>Public/lib/jquery/jquery.min.js"></script>
                     <script src="<?php echo URL?>Public/lib/jquery/jquery-migrate.min.js"></script>
@@ -35,7 +38,7 @@ class Template
                     <script src="<?php echo URL?>Public/lib/owlcarousel/owl.carousel.min.js"></script>
                     <script src="<?php echo URL?>Public/lib/magnific-popup/magnific-popup.min.js"></script>
                     <script src="<?php echo URL?>Public/lib/sticky/sticky.js"></script>
-                    <script src="<?php echo URL?>Public/contactform/contactform.js"></script>
+                    <script src="<?php echo URL?>Public/js/contactform.js"></script>
                     <script src="<?php echo URL?>Public/js/main.js"></script>
             </head>
 
@@ -46,7 +49,7 @@ class Template
                         <i class="fa fa-phone"></i> +1 5589 55488 55
                     </div>
                     <div class="social-links float-right">
-                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>-
                         <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
                         <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
                         <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
@@ -59,9 +62,7 @@ class Template
                 <div class="container">
 
                     <div id="logo" class="pull-left">
-                        <h1><a href="#body" class="scrollto">Reve<span>al</span></a></h1>
-                        <!-- Uncomment below if you prefer to use an image logo -->
-                        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
+                        <h1><a href="#body"><img src="<?php echo URL?>/Public/img/logo/logo.png" alt="" title="" /></a></h1>
                     </div>
 
                     <nav id="nav-menu-container">
@@ -84,6 +85,31 @@ class Template
                     </nav><!-- #nav-menu-container -->
                 </div>
             </header>
+        <?php
+    }
+
+    public static function footer()
+    {
+        ?>
+        <footer id="footer">
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong>Reveal</strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    <!--
+                      All the links in the footer should remain intact.
+                      You can delete the links only if you purchased the pro version.
+                      Licensing information: https://bootstrapmade.com/license/
+                      Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Reveal
+                    -->
+                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+            </div>
+        </footer><!-- #footer -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </html>
         <?php
     }
 }
