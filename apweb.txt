@@ -1,0 +1,9 @@
+create table tipo_usuarios (id_tipousuario int primary key AUTO_INCREMENT, tipo_usuario varchar(30));
+create table generos (id_genero int primary key AUTO_INCREMENT, descripcion varchar(30));
+create table categorias (id_categoria int primary key AUTO_INCREMENT, descripcion varchar(30));
+create table estado_infografia (id_edoinfografia int primary key AUTO_INCREMENT, descripcion varchar(30));
+
+create table usuarios (id_usuario int primary key AUTO_INCREMENT, nombre_usuario varchar(40), email varchar(50), contrasena(15), fecha_nac date, id_genero int, id_tipousuario int);
+create table suscripcion (id_suscripcion int primary key AUTO_INCREMENT, pago float, duracion int, fecha_inicio timestamp, fecha_termino timestamp, id_usuario int);
+create table infografia(id_infografia int primary key AUTO_INCREMENT, archivo varchar(30), nombre varchar(30), descripcion varchar(30), fecha_registro timestamp, id_categoria int, id_usuario int);
+create table valida_infografia (id_validainfo int primary key AUTO_INCREMENT, id_infografia int, id_edoinfografia int);
